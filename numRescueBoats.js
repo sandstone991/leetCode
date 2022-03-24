@@ -32,11 +32,6 @@ var numRescueBoats = function(people, limit) {
 *   L   R
 *
 *  [3,3,4,5]
-*   ^   ^
-*   |   | 
-*   L   R  
-*
-*  [3,3,4,5]
 *   ^ ^
 *   | | 
 *   L R  
