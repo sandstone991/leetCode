@@ -4,7 +4,10 @@
  * @return {number}
  */
 var numRescueBoats = function(people, limit) {
-    people.sort((a,b)=>a-b)
+          if(limit ===1){
+        return people
+    }
+    people.sort((a,b)=>a-b);
     let r = people.length-1;
     let l = 0;
     let ans=0;
