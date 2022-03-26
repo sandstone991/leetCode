@@ -22,3 +22,17 @@ var preorderTraversal = function(root) {
     return ans
     
 };
+/*
+ * @param {TreeNode} root
+ * @return {number[]}
+ */
+var inorderTraversal = function(root) {
+        let ans = [];
+    (function traverse(root){
+        if(!root)return
+        traverse(root.left,root);
+        ans.push(root.val)
+        traverse(root.right,root);
+    })(root)
+    return ans
+};
