@@ -36,3 +36,20 @@ var inorderTraversal = function(root) {
     })(root)
     return ans
 };
+/*
+ * @param {TreeNode} root
+ * @return {number[]}
+ */
+var postorderTraversal = function(root) {
+            let ans = [];
+    (function traverse(root){
+        if(!root)return
+        traverse(root.left,root);
+        traverse(root.right,root);
+        ans.push(root.val)
+    })(root)
+    return ans
+};
+
+//Framework thinking works.
+//The whole idea is when you return if you want to finish all the left node first then return all the left and right nodes ... etc
