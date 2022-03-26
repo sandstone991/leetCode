@@ -10,6 +10,7 @@
  * @param {TreeNode} root
  * @return {number[]}
  */
+//Recursive
 var preorderTraversal = function(root) {
     let ans = [];
     (function traverse(root){
