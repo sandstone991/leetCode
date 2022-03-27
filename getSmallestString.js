@@ -15,3 +15,8 @@ var getSmallestString = function (n, k) {
   }
   return arr.join("");
 };
+//Something I figured out after I solved this problem is my solution is dumb and there could be a better solution mathematically
+//No matter how long the string is or how big or small your k is your string will always be in a this form
+// [one or more a] + [0 or 1 character that is not a or z] + [0 or more z]
+//knowing this you can see how many (a)s will fit at the beginning how many z can fit at the end (if any) and the remainder will be the middle character (if any)
+
